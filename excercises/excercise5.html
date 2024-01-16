@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Henri Soramäki">
+    <title>Flex Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: blanchedalmond;
+            color: black;
+            padding: 10px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        main {
+            flex-grow: 1;
+            margin: 10px;
+           
+            background-color: darkgrey;
+            color: forestgreen;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            flex: 1;
+            margin: 10px;
+            background-color: black;
+            color: aliceblue;
+            justify-content: space-around;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            size: 100px;
+            background-color: black;
+            color: azure;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        aside {
+            width: 100px;
+            background-color: cadetblue;
+            color: whitesmoke;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Trying Out Flexboxes</header>
+
+    <div class="main-container">
+        <aside>
+            <article>Dog</article>
+            <article>Cat</article>
+            <article>Camel</article>
+            <article>Parrot</article>
+        </aside>
+
+        <main>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque reprehenderit odit vitae aliquid itaque quis at ad quia esse, optio, vero pariatur nostrum laboriosam natus fugit asperiores dicta, vel quaerat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate architecto modi quas natus quidem perferendis eligendi, ab, veniam ut cum? Pariatur at quo in fuga autem sed possimus veritatis.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>Henri Soramäki 2024</p>
+        
+    </footer>
+</body>
+</html>
