@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Henri Soramäki">
     <title>Flex Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+        
 
         header {
             display: flex;
@@ -26,25 +21,20 @@
         .main-container {
             display: flex;
             flex-grow: 1;
+            margin: 20px;
+            
         }
 
         main {
             flex-grow: 1;
             margin: 10px;
            
-            background-color: darkgrey;
+            background-color: rgb(7, 6, 6);
             color: forestgreen;
             padding: 10px;
         }
 
-        nav {
-            display: flex;
-            flex: 1;
-            margin: 10px;
-            background-color: black;
-            color: aliceblue;
-            justify-content: space-around;
-        }
+        
 
         footer {
             display: flex;
@@ -58,25 +48,64 @@
 
         aside {
             width: 100px;
+
             background-color: cadetblue;
             color: whitesmoke;
-            margin: 5px;
+            margin: 0px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content:space-evenly;
             padding: 10px;
         }
+
+        
+
+        .top-menu {
+    list-style: none; 
+    display: flex;
+    flex-direction: row; 
+    justify-content:center ; 
+    background-color: black;
+    color:azure;
+    
+        }
+
+        .top-menu li {
+            display: flex;
+            margin: 40px;
+    justify-content: space-evenly;
+}
     </style>
+
+<header>Trying Out Flexboxes</header>
+
+    <div class="top-bar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <ul class="top-menu">
+            <li><a href="../index.html"target="_blank">Home Page</a></li> 
+            <li><a href="excercise1.html"target="_blank">Excercise 1</a></li>    
+            <li><a href="excercise2.html"target="_blank">Excercise 2</a></li>
+            <li>Excercise 3</li>
+            <li><a href="excercise4.html"target="_blank">Excercise 4</a></li>
+            <li><a href="excercise5.html"target="_blank">Excercise 5</a></li>
+            <li>Excercise 6</li>
+        
+        </ul>
+        </nav>
+    </div>
 </head>
 <body>
-    <header>Trying Out Flexboxes</header>
+    
+    
 
     <div class="main-container">
         <aside>
+            <ul>
             <article>Dog</article>
             <article>Cat</article>
             <article>Camel</article>
             <article>Parrot</article>
+            </ul>
         </aside>
 
         <main>
@@ -85,9 +114,72 @@
         </main>
     </div>
 
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>30</td>
+            <td>Colorado</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>18</td>
+            <td>California</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Michael</td>
+            <td>Scofield</td>
+            <td>45</td>
+            <td>Prison</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Jesus</td>
+            <td>Christ</td>
+            <td>2000</td>
+            <td>Up above</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Darth</td>
+                <td>Vader</td>
+                <td>60</td>
+                <td>Death Star</td>
+              </tr>
+          </tr>
+        </tbody>
+      </table>
+
+      <select class="custom-select">
+        <option selected>Open Here!</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+
     <footer>
         <p>Henri Soramäki 2024</p>
         
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
+
+
+
 </html>
